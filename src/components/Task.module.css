@@ -1,0 +1,136 @@
+.task {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--gray-500);
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--gray-400);
+  position: relative;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-left: 0.5rem;
+}
+.trashIcon {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--gray-300);
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.trashIcon:hover {
+  color: var(--danger);
+  padding: 0.25rem;
+  background: var(--gray-400);
+  border-radius: 0.5rem;
+
+ 
+}
+.editIcon {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--gray-300);
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.editIcon:hover {
+  color: var(--gray-100);
+}
+
+.edit {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+.edit input {
+  width: 50%;
+  padding: 0.2rem 0.5rem;
+  margin-right: 0.25rem;
+  border: 1px solid var(--gray-500);
+  border-radius: 0.5rem;
+  background: var(--gray-400);
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--gray-100);
+}
+
+
+.checkCircle {
+  font-size: 1.5rem;
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 1rem;
+  
+}
+.checkCircle:hover {
+  background-color: var(--blue-dark);
+}
+
+.checkCircleChecked {
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--purple-dark);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: var(--purple-dark);
+  margin-right: 1rem;
+  
+}
+
+.checkCircleChecked > svg {
+  color: white;
+}
+.checkCircleChecked:hover {
+  background-color: var(--purple);
+  border-color: var(--purple);
+}
+
+.checkCircleChecked:hover > svg {
+  color: var(--white);
+}
+
+.check {
+  width: 100%;
+  height: 100%;
+}
+
+.checkHidden {
+  visibility: hidden;
+}
+.completed {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+

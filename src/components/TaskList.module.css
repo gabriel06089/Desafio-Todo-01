@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 54% ;
+  padding-top: 4rem;
+
+  margin: 1.5rem auto;
+  box-sizing: border-box;
+
+  line-height: 140%;
+  color: var(--gray-100);
+}
+.tasks {
+  color: var(--blue);
+  font-weight: bold;
+  font-size: 14px;
+}
+.completedTasks {
+  color: var(--purple);
+  font-size: 14px;
+}
+.counter {
+  margin-left: 0.5rem;
+  color: var(--gray-200);
+  background: var(--gray-400);
+
+  padding: 0.125rem 0.5rem;
+
+  border-radius: 0.5rem;
+
+  position: relative;
+}
+
+@media (max-width: 768px) {
+    html{
+        font-size: 87.5%;
+    }
+    .container{
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+}
