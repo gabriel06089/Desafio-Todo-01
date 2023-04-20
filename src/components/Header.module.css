@@ -141,3 +141,26 @@ input[type='checkbox'] {
 .clipboard {
   color: var(--gray-400);
 }
+
+@media (max-width: 768px) {
+  html{
+      font-size: 87.5%;
+  }
+  .listcontainer{
+    gap: 1rem;
+    
+      flex-direction: column;
+      grid-template-columns: 1fr;
+  }
+  .input{
+    width: 70%;
+  
+  
+ 
+  
+  color: var(--gray-100);
+  }
+  .input::placeholder{
+    text-align: center;
+  }
+}

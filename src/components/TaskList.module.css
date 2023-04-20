@@ -38,6 +38,7 @@
     }
     .container{
       gap: 0.5rem;
+      margin-top: 3.3rem;
       
         flex-direction: column;
         grid-template-columns: 1fr;
