@@ -26,7 +26,7 @@ export function TaskListSummary({ tasksList }: TaskListSummaryProps) {
   return (
     <div className={styles.container}>
       <span className={styles.tasks}>
-        Tarefa Criadas <span className={styles.counter}>{totalTasks} </span>
+        Tarefas Criadas <span className={styles.counter}>{totalTasks} </span>
       </span>
       <span className={styles.completedTasks}>
         Concluídas{' '}
